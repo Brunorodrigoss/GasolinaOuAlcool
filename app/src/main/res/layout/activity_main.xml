@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gasolinaoualcool.cursoandroid.com.gasolinaoualcool.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#94db31">
+
+        <ImageView
+            android:id="@+id/logoId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            app:srcCompat="@drawable/gauge" />
+
+        <TextView
+            android:id="@+id/textoAlcoolId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoId"
+            android:layout_marginTop="43dp"
+            android:padding="@dimen/pading_input"
+            android:text="Preço do Alcool"
+            android:textColor="#415c00"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/precoAlcoolId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/textoAlcoolId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignStart="@id/textoAlcoolId"
+            android:layout_below="@id/textoAlcoolId"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Ex: 1.95"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/pading_input" />
+
+        <TextView
+            android:id="@+id/textoGasolinaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textoAlcoolId"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/pading_input"
+            android:text="Preço da Gasolina"
+            android:textColor="#415c00"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/precoGasolinaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoGasolinaId"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/textoGasolinaId"
+            android:layout_below="@+id/textoGasolinaId"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Ex: 2.95"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/pading_input" />
+
+        <Button
+            android:id="@+id/botaoVerificarId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precoGasolinaId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text="Verificar" />
+
+        <TextView
+            android:id="@+id/resultadoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botaoVerificarId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:textColor="#415c00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
